@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopify Functions Network Callout Simulator</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/index.js"></script>
+  </head>
+  <body>
+
+    <h1>Shopify Functions Network Callout Simulator</h1>
+
+    <form>
+
+      <label for="functionType">Choose a Shopify Function:</label>
+      <br /><br />
+
+      <select name="functionType" class="function-type"></select>
+      <br /><br />
+
+      <label for="functionType">Choose a scenario:</label>
+      <br /><br />
+
+      <select name="functionScenario" class="function-scenario"></select>
+      <br /><br />
+
+      <label for="jsonPayload">Paste JSON request payload (required fields in example)</label>
+      <br /><br />
+
+      <textarea
+        name="requestPayload"
+        class="request-payload"
+        rows="10"
+        cols="50"
+      >
+      </textarea>
+      <br /><br />
+
+      <label for="responsePayload">Response</label>
+      <br /><br />
+
+      <textarea
+        name="responsePayload"
+        class="response-payload"
+        rows="10"
+        cols="50"
+      >
+      </textarea>
+      <br /><br />
+
+      <button class="submit">Submit</button>
+
+    </form>
+  </body>
+</html>
