@@ -1,0 +1,17 @@
+/*----- Dependencies ------*/
+const express = require("express");
+const router = express.Router();
+const cartValidationCtrl = require("../controllers/cartValidation.js");
+
+/*----- Routes ------*/
+// /cartValidation
+router.get("/", cartValidationCtrl.status);
+
+// /cartValidation/minMax
+router.post("/minmax", cartValidationCtrl.minMax);
+
+// /cartValidation/activeMember
+router.post("/activemember", cartValidationCtrl.activeMember);
+
+/*----- Exports ------*/
+module.exports = router;
